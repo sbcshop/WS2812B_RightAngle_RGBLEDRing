@@ -18,5 +18,5 @@ This GitHub provides getting started and hardware design files of RGB LED Ring.
 - Signal input voltage: - 0.5V to VCC + 0.5V
 - Forward Each LED current: 12mA
 - Typical current consumption of Single Ring: 500-700mA (full Brightness)
-- Dominant Wavelength: 620nm~625nm;515nm~525nm;465nm~475nm
+- Dominant Wavelength: 620nm ~ 625nm; 515nm ~ 525nm; 465nm ~ 475nm
 
