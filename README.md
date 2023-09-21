@@ -22,25 +22,70 @@ This GitHub provides getting started and hardware design files of RGB LED Ring.
 - Data transmission speed: up to 800Kbps
 
 ### Pinout: 
+<img src="https://github.com/sbcshop/RGBLEDRing_RightAngle_32/blob/main/images/RGBRingLED_pinout.jpg" > 
+
+- (1) RGB LED
+- (2) Data IN JST connector*
+- (3) Data IN PCB pad**
+- (4) Data OUT JST connector 
+- (5) Data OUT PCB pad
+
+**Note:** 
+- *JST-SH 1mm type to support cascading multiple Rings
+- **Exposed PCB pad format to support cascading multiple Rings
+
+**WARNING:** Do not cascade more than 2 Rings when using full brightness of LEDs.
+
+## Interfacing Ring with Pico/Pico W
+
+| Pico | RGBLEDRing Pin | Function | 
+|---|---|---|
+|VBUS | 5V | Positive 5V Supply |
+|GPIO0 | IN | Data Signal Input pin of RGB LED |
+|GND | GND | Ground | 
+
+<img src="https://github.com/sbcshop/RGBLEDRing_RightAngle_32/blob/main/images/Demo_PicoRing.gif">
+
+Any other GPIOs of Pico can also be use, just make sure to modify in code also. Checkout below example codes to play with RGB LED Ring using Pico,
+ 
+[Pico Examples](https://github.com/sbcshop/RGBLEDRing_RightAngle_32/tree/main/examples/Pico%20examples) - contains example demo codes to run RGB LED Ring using Pico / Pico W.
+
+
+## Interfacing Ring with Arduino Uno
+
+| Arduino Uno | RGBLEDRing Pin | Function | 
+|---|---|---|
+|5V | 5V | Positive 5V Supply |
+|D6 | IN | Data Signal Input pin of RGB LED |
+|GND | GND | Ground | 
+
+<img src="https://github.com/sbcshop/RGBLEDRing_RightAngle_32/blob/main/images/demo_ArduinoRing.gif">
+
+Here also you can use different digital pin of Arduino. Checkout below example codes to play with RGB LED Ring using Arduino,
+
+[Arduino Examples](https://github.com/sbcshop/RGBLEDRing_RightAngle_32/tree/main/examples/Arduino%20examples) - contains example demo codes to run RGB LED Ring with Arduino and compatible boards.
+
+**Cascade Two Rings:**
+
+<img src="https://github.com/sbcshop/RGBLEDRing_RightAngle_32/blob/main/images/Demo_tworing_pico.gif">
 
 
 ### Repository Contents:
   - [/Design Data](https://github.com/sbcshop/Scangenie_Hardware/tree/main/Design%20Data) - This directory contains Schematic, Top and Bottom View
   - [/Mechanical Data](https://github.com/sbcshop/Scangenie_Hardware/tree/main/Mechanical%20Data) - This directory contains Dimension, 3D and STEP files
-  - [WS2812B Dataheet]() - 
 
 ## Related Products
-  * [Barcode HAT](https://shop.sb-components.co.uk/products/barcode-hat-for-raspberry-pi) 
+  * [PiCube: 4x4x4 LED Cube](https://shop.sb-components.co.uk/products/picube-4x4x4-led-cube-kit-for-raspberry-pi?variant=567249895444) 
    
-     ![Barcode_HAT](https://shop.sb-components.co.uk/cdn/shop/products/4_b21d715d-e0ec-45a6-a743-fed89e77b3c3.jpg?v=1665556430&width=300)   
+     ![PiCube: 4x4x4 LED Cube](https://shop.sb-components.co.uk/cdn/shop/products/4_983efe7f-fe0d-49e4-b69a-1fca41e4ce46.png?v=1609844104&width=300)   
 
-  * [Barcode Scanner Module, 1D/2D Codes Reader](https://shop.sb-components.co.uk/products/barcode-scanner-module-1d-2d-codes-reader) 
+  * [RPi LED Matrix](https://shop.sb-components.co.uk/products/rpi-led-matrix?_pos=2&_sid=1873dee50&_ss=r) 
    
-     ![Barcode_Scanner_Module](https://shop.sb-components.co.uk/cdn/shop/products/barcode-scanner-module-1_1.jpg?v=1612257001&width=300) 
+     ![RPi LED Matrix](https://shop.sb-components.co.uk/cdn/shop/products/5819.jpg?v=1521213640&width=300) 
 
-  * [1D 2D CMOS DE2120 Barcode Scanner Sensor](https://shop.sb-components.co.uk/products/1d-2d-cmos-de2120-barcode-scanner-sensor) 
+  * [Rotary Encoder - LED Array & Touch LCD for ESP32/Pico/HAT](https://shop.sb-components.co.uk/products/rotary-encoder-led-array-touch-lcd-for-esp32-pico-hat?variant=41002601644115) 
    
-     ![1D_2D_CMOS_DE2120_Barcode Scanner_Sensor](https://shop.sb-components.co.uk/cdn/shop/products/16410-2D_Barcode_Scanner_Module_-_DE2120-01.jpg?v=1657026105&width=300) 
+     ![Rotary Encoder - LED Array & Touch LCD for ESP32/Pico/HAT](https://shop.sb-components.co.uk/cdn/shop/files/15_38d1a51d-b726-4812-8f3b-648cc92b3419.jpg?v=1691845969&width=300) 
 
  
 ## Product License
