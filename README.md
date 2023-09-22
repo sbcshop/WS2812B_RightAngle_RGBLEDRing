@@ -1,4 +1,4 @@
-# RGBLEDRing_RightAngle_32
+# WS2812B Right Angle RGB LED Ring
 LED Ring featuring WS2812B Addressable RGB LEDs, equipped with integrated drivers, empowering users to exert precise control over each LED's color and brightness independently. With true 24-bit color production, this LED Ring offering a staggering 16 million different color combinations for mesmerizing visual effects.
  
 This GitHub provides getting started and hardware design files of RGB LED Ring.
